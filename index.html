@@ -27,7 +27,7 @@
                 <input type="email" id="email" required>
             </div>
             <div class="form-group">
-              <label for="inquiryType">お問い合わせ内容</label>
+              <label for="inquiryType">お問い合わせ項目</label>
               <select id="inquiryType" required>
                   <option value="">選択してください</option>
                   <option value="productInquiry">商品について</option>
@@ -35,13 +35,16 @@
                   <option value="returnPolicy">返品について</option>
                   <option value="other">その他</option>
               </select>
-            </div>  
+            </div><div class="form-group">
+              <label for="message">お問い合わせ内容</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
             <div class="form-group">
               <p>お問い合わせは初めて？</p>
               <label><input type="radio" name="inquiryExperience" value="firstTime" checked> 初めて</label>
               <label><input type="radio" name="inquiryExperience" value="secondTime"> 2回目</label>
               <label><input type="radio" name="inquiryExperience" value="thirdOrMore"> 3回目以上</label>
-          </div>
+            </div>
             <div class="form-group">
                 <label><input type="checkbox"> お知らせを受信する</label>
             </div>
